@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants Indiens | Contact</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta name="description"
+        content="Parcourez l'ensemble de nos restaurants Indiens basées sur Epinal, menus téléchargeables et informations de contact renseignées !">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Restaurants Indiens | Epinal">
+    <meta property="og:description" content="Restaurants, réservation, indiens">
+    <link rel="stylesheet" href="./stylescontact.css">
+    <link rel="stylesheet" href="./stylesnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./logo.png" alt="Logo" class="logo"></a>
+        <nav>
+            <a href="./services.html"><i class="fa-solid fa-utensils"></i> Nos Restaurants</a>
+            <a href="./contact.html"><i class="fa-solid fa-envelope"></i> Nous contacter</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contactez Restaurants Indiens | Epinal</h1>
+        <div class="content2" id="content2">
+            <h2>Nous contacter</h2>
+            <form id="contact-form">
+                <input type="text" name="user_name" placeholder="Votre nom" required>
+
+                <input type="email" name="user_email" placeholder="Votre email" required>
+
+                <textarea name="message" placeholder="Votre message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <p id="status"></p>
+
+            <!-- EmailJS -->
+        </div>
+        <div class="content3">
+            <div class="card">
+                <div class="grid">
+                    <h2>Informations</h2>
+                    <div class="left">
+                        <p><i class="fa-solid fa-phone"></i>07 83 41 33 94</p>
+                        <p><i class="fa-solid fa-at"></i>aentfb@yahoo.com</p>
+                    </div>
+                    <div class="right">
+                        <p><i class="fa-solid fa-phone"></i>07 59 90 26 23</p>
+                        <p><i class="fa-solid fa-at"></i>az54000@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer> &copy; Restaurants Indiens | Epinal</footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="./scriptcontact.js"></script>
+</body>
+
+</html>

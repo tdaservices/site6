@@ -1,0 +1,141 @@
+:root {
+    --g1: linear-gradient(35deg, orange, rgb(255, 136, 0));
+    --c1: rgb(153, 148, 6);
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    background: conic-gradient( rgb(255, 255, 255), rgb(244, 244, 196),rgb(255, 255, 255));
+    position: relative;
+}
+
+
+main {
+    margin-inline: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--c1);
+    transition: 0.8s ease;
+    font-size: 1.1rem;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+.logo,
+nav a {
+    box-shadow: 10px 0 25px rgba(0, 0, 0, 0.471);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vmin;
+    backdrop-filter: blur(25px);
+    box-shadow: 10px 0 25px var(--c1);
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+nav {
+    /* outline: 2px solid red; */
+    display: flex;
+    gap: 20px;
+    padding: 1vmin;
+    flex-wrap: wrap;
+}
+
+nav a {
+    background: var(--c1);
+    color: white;
+    padding: 1vmin 2vmin;
+    border-radius: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+nav i {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2vmin;
+    margin-top: 6vh;
+}
+
+footer {
+    background: var(--c1);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1vmin;
+}
+
+@media (width>1000px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    nav {
+        /* outline: 2px solid red; */
+        display: flex;
+        gap: 20px;
+        padding: 1vmin;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        background: var(--c1);
+        color: white;
+        padding: 1vmin 2vmin;
+        border-radius: 16px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: 0.4s ease;
+    }
+
+    nav a:hover {
+        transform: scale(1.05) translateY(-2px);
+    }
+
+    nav i {
+        color: white;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .logo:hover {
+        transform: scale(1.05);
+        box-shadow: 10px 0 25px var(--c1);
+    }
+}

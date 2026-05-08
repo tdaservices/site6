@@ -1,0 +1,109 @@
+.content2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4vmin;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-inline: auto;
+    color: black;
+    margin-bottom: 15vh;
+    margin-top: 2vh;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: black;
+}
+textarea{
+    height: 20vh;
+    resize: none;
+}
+button {
+    padding: 10px;
+    background: var(--c1);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 0;
+    border: 1px solid var(--c1);
+    border-radius: 5px;
+    /* text-align: center; */
+    margin-inline: auto;
+    width: 70vmin;
+    padding: 5vmin 0;
+}
+
+.grid h2{
+    grid-column: span 2;
+    text-decoration: underline;
+}
+
+.grid p{
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.grid .right, .grid .left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 32vmin;
+    margin-inline: auto;
+    gap: 10px;
+}
+.grid i{
+    font-size: 0.5rem;
+}
+
+@media (width>1000px) {
+    form {
+        width: 100vmin;
+    }
+    button:hover{
+        filter: brightness(120%);
+        box-shadow: 0 0 25px white;
+        transform: translateY(-10px);
+    }
+    h1{
+        width: 60%;
+        margin-inline: auto;
+    }
+    input:hover, textarea:hover {
+        border: 1px solid var(--c1);
+        transform: scale(1.02);
+        color: var(--c1);
+    }
+    .grid{
+        gap: 40px 0;
+        width: 100vmin;
+    }
+    .grid p{
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+    }
+    .grid .right, .grid .left{
+        width: 32vmin;
+    }
+    .grid i{
+        font-size: 1.5rem;
+    }
+}
